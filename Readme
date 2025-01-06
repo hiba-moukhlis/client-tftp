@@ -1,0 +1,30 @@
+ Client TFTP
+
+Objectif : Développer un client TFTP pour télécharger et téléverser des fichiers via le protocole TFTP.
+
+ Fonctionnalités jusqu'à la question 5
+   Téléchargement** (`gettftp host file`) :
+  - Envoi d'une requête en lecture (RRQ).
+  - Réception de fichiers  et envoi des acquittements (ACK).
+-  Téléversement** (`puttftp host file`) 
+
+  Prérequis
+- Serveur TFTP installé (ex. `sudo apt install atftp`).
+- Analyse réseau possible avec Wireshark.
+
+   Commandes
+1. Compilez :  
+ bash
+   gcc -o gettftp gettftp.c
+   gcc -o puttftp puttftp.c
+ 
+2. Téléchargez un fichier :  
+ bash
+   ./gettftp <adresse_serveur> <nom_fichier>
+
+3. Téléversez un fichier :  
+bash
+   ./puttftp <adresse_serveur> <nom_fichier>
+
+   Binome : MOUKHLIS HIBA  - SAAD OUAHABI
+ 
